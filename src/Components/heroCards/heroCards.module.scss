@@ -1,0 +1,52 @@
+.heroes {
+    margin: 1em;
+    cursor: pointer;
+    border: 1px solid #00000036;
+    background-color: #0000006b;
+    border-radius: 3em;
+    padding: 1em 2em;
+    transition: all 0.5s;
+    &:hover {
+        background-color: #00bbff3b;
+        transform: scale(1.1);
+    }
+    .heroes__avatar {
+        width: 12vh;
+        height: 18vh;
+        transition: all 0.5s;
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+    .heroes__stats {
+        text-align: center;
+        .heroes__paragraps {
+            padding: 1em;
+            height: 1.5em;
+        }
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .heroes {
+        margin: 1em 0.5em;
+        padding: 0.3em 1em;
+        .heroes__avatar {
+            width: 15vh;
+            height: 25vh;
+        }
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

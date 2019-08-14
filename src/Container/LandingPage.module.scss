@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
+* {
+    font-family: 'Permanent Marker', cursive;
+    color: #f8d552;
+}
+.LandingPage {
+    background: url('https://images.alphacoders.com/193/thumb-1920-193.jpg') no-repeat center fixed;
+    height: 100vh;
+    .LangingPage__Title {
+        margin: 0;
+        text-align: center;
+        text-decoration: underline;
+        padding: 0.5em;
+        font-size: 3em;
+    }
+    .LangingPage__HeroSlide {
+        margin: 0 auto;
+        width: 50%;
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        overflow-y: hidden;
+    }
+}
+
+::-webkit-scrollbar-track
+{
+    -webkit-box-shadow: inset 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 25px;
+    background-color: rgba(245, 245, 245, 0.075);
+}
+
+::-webkit-scrollbar
+{
+    width: 12px; 
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb
+{
+    border-radius: 25px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    background-color: #f8d552;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .LandingPage {
+        .LangingPage__Title{
+            font-size: 2em;
+        }
+        .LangingPage__HeroSlide {
+            width: 90%
+        }
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

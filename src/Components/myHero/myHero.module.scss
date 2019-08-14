@@ -1,0 +1,62 @@
+.myHero {
+    display: flex;
+    justify-content: center;
+    padding: 1em 1em;
+    border: 2px solid #f7d452;
+    border-radius: 3em;
+    width: 50%;
+    margin: 0 auto;
+    .myHero__img {
+        width: 20vh;
+        height: 40vh;
+        transition: transform 1s ease-in-out;
+        &:hover {
+            transform: scale(1.3)
+        }
+    }
+    .myHero__data {
+        display: flex;
+        align-self: center;
+        flex-direction: column;
+        .myHero__dataPara {
+            padding: 1em;
+            margin: 2em;
+            text-align: center;
+            background: #f8d552;
+            border-radius: 5em;
+            color: #222;
+            width: 8em;
+        }
+    }
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .myHero {
+        width: 85%;
+        .myHero__img {
+            width: 18vh;
+            height: 35vh;
+            position: absolute;
+        }
+        .myHero__data {
+            .myHero__dataPara {
+                padding: 0.5em;
+                margin: 1.5em;
+                max-width: 100%;
+            }
+        }
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

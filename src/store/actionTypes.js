@@ -1,0 +1,1 @@
+export const LOAD_CURRENT_HERO = 'LOAD_CURRENT_HERO';
