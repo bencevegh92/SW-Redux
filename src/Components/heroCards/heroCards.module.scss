@@ -30,11 +30,11 @@
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
     .heroes {
-        margin: 1em 0.5em;
+        margin: 0.7em;
         padding: 0.3em 1em;
         .heroes__avatar {
             width: 15vh;
-            height: 25vh;
+            height: 20vh;
         }
     }
 } 

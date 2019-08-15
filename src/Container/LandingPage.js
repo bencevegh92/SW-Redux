@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import { BrowserRouter, Switch, Route, Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import Fade from 'react-reveal/Fade';
 
 import { connect } from 'react-redux';
@@ -18,7 +18,7 @@ class LandingPage extends Component {
         resData: []
     }
     componentDidMount() {
-        axios.get('https://swapi.co/api/people/')
+        axios.get('https://swapi.co/api/people/.json')
             .then(response => {
                 const resData = response.data;
                 const heroes = resData.results;
@@ -44,10 +44,11 @@ class LandingPage extends Component {
                 name={hero.name}
                 heroImg={heroImg}
                 clicked={() => {
-                    console.log(heroImg[hero.name]);
-                    console.log(hero.name);
+                    /* console.log(heroImg[hero.name]);
+                    console.log(hero.name); */
                     this.props.clickHandler(
-                        {...hero,
+                        {
+                            ...hero,
                             img: heroImg[hero.name]
                         }
                     )
@@ -58,25 +59,27 @@ class LandingPage extends Component {
             return <Spinner />
         }
         return (
-            <BrowserRouter>
-                <Fade>
-                    <div className={classes.LandingPage}>
-                        <h1 className={classes.LangingPage__Title}>Select your Hero</h1>
-                        <MyHero
-                            name={this.props.heroData.name}
-                            gender={this.props.heroData.gender}
-                            mass={this.props.heroData.mass}
-                            img={this.props.heroData.img}
-                            height={this.props.heroData.height}
-                            eyeColor={this.props.heroData.eye_color}
-                            hairColor={this.props.heroData.hair_color}
-                        />
-                        <div className={classes.LangingPage__HeroSlide}>
-                            {heroes}
-                        </div>
+            <Fade>
+                <div className={classes.LandingPage}>
+                    <h1 className={classes.LangingPage__Title}>Select your Hero</h1>
+                    <MyHero
+                        name={this.props.heroData.name}
+                        gender={this.props.heroData.gender}
+                        mass={this.props.heroData.mass}
+                        img={this.props.heroData.img}
+                        height={this.props.heroData.height}
+                        eyeColor={this.props.heroData.eye_color}
+                        hairColor={this.props.heroData.hair_color}
+                    />
+                    <div className={classes.LangingPage__HeroSlide}>
+                        {heroes}
                     </div>
-                </Fade>
-            </BrowserRouter>
+                    <div className={classes.LandingPage__nav}>
+                        <Link to=''><button className={classes.LandingPage__btn}>&#8592;</button></Link>
+                        <Link to='/battlePage'><button className={classes.LandingPage__btn}>&#8594;</button></Link>
+                    </div>
+                </div>
+            </Fade>
         );
     }
 }
@@ -87,7 +90,7 @@ const mapStateToProps = state => {
 }
 const mapDispatchToProps = dispatch => {
     return {
-        clickHandler: (data) => {console.log(data); dispatch({ type: actionTypes.LOAD_CURRENT_HERO, data })},
+        clickHandler: (data) => {/* console.log(data);  */dispatch({ type: actionTypes.LOAD_CURRENT_HERO, data }) },
     }
 };
 

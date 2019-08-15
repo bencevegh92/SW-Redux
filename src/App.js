@@ -3,6 +3,7 @@ import { BrowserRouter, Route } from 'react-router-dom';
 
 import Welcome from './Components/welcome/welcome';
 import LandingPage from './Container/LandingPage';
+import BattlePage from './Components/battlePage/battlePage';
 
 import './App.css';
 
@@ -12,6 +13,7 @@ function App() {
       <div className="App">
         <Route path='/' exact component={Welcome}/>
         <Route path='/landingpage' exact component={LandingPage} />
+        <Route path='/battlePage' exact component={BattlePage} />
       </div>
     </BrowserRouter>
   );

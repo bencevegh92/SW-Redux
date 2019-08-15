@@ -6,15 +6,15 @@ const myHero = (props) => {
     return (
         <div className={classes.myHero}>
             <div className={classes.myHero__data}>
-                <p className={classes.myHero__dataPara}>{props.name}</p>
-                <p className={classes.myHero__dataPara}>{props.gender}</p>
-                <p className={classes.myHero__dataPara}>{props.mass}</p>
+                <p className={classes.myHero__dataPara}>Name:<br />{props.name}</p> 
+                <p className={classes.myHero__dataPara}>Gender:<br />{props.gender}</p>
+                <p className={classes.myHero__dataPara}>Mass:<br />{props.mass}</p>
             </div>
             <img className={classes.myHero__img} src={props.img} alt=''></img>
             <div className={classes.myHero__data}>
-                <p className={classes.myHero__dataPara}>{props.height}</p>
-                <p className={classes.myHero__dataPara}>{props.eyeColor}</p>
-                <p className={classes.myHero__dataPara}>{props.hairColor}</p>
+                <p className={classes.myHero__dataPara}>Height:<br />{props.height}</p>
+                <p className={classes.myHero__dataPara}>Eye Color:<br />{props.eyeColor}</p>
+                <p className={classes.myHero__dataPara}>Hair Color:<br />{props.hairColor}</p>
             </div>
         </div>
     );

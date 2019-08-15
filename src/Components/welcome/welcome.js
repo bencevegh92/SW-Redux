@@ -12,7 +12,7 @@ class Welcome extends Component {
                     <div className={classes.crawl}>
                         <div className={classes.title}>
                             <p>Episode IV</p>
-                            <h1>Bence vs Redux</h1>
+                            <h1>The New Hope</h1>
                         </div>
 
                         <p>It is a period of civil war. Rebel spaceships, striking from a hidden base, have won their first victory against the evil Galactic Empire.</p>

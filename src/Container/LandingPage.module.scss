@@ -22,6 +22,28 @@
         overflow-x: auto;
         overflow-y: hidden;
     }
+    .LandingPage__nav {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        justify-content: space-between;
+        .LandingPage__btn {
+            font-size: 3em;
+            padding: 0 0.5em 0 0.5em;
+            font-weight: bold;
+            background: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.5s ;
+            &:hover {
+                color: #ffffff;
+                border-radius: 2em;
+                padding: 0 0.4em;
+            }
+        }
+    }
 }
 
 ::-webkit-scrollbar-track
