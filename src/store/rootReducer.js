@@ -15,9 +15,9 @@ const initialState = {
 
 
 const rootReducer = (state = initialState, action) => {
+    console.log(state)
     switch (action.type) {
         case actionTypes.LOAD_CURRENT_HERO:
-            console.log(action)
             return {
                 ...state,
                 heroes: action.data

@@ -1,0 +1,56 @@
+.Game{
+    .GameHeader {
+        text-align: center;
+        font-size: 3em;
+    }
+    .GameWrapper {
+        display: flex;
+        justify-content: space-around;
+        .Game__selectedHero {
+            width: 50%;
+            text-align: center;
+            .Game__img {
+                width: 25vw;
+                height: 60vh;
+                padding: 2em 1em;
+            }
+            .Game__btns {
+                text-align: center;
+                .Game__btn {
+                    padding: 1em;
+                    background: transparent;
+                    border: 2px solid;
+                    outline: none;
+                    border-radius: 20px;
+                    transition: 0.3s all;
+                    &:hover {
+                        background: red;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+    .Game__nav {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        justify-content: space-between;
+        .Game__navBtn {
+            font-size: 3em;
+            padding: 0 0.5em 0 0.5em;
+            font-weight: bold;
+            background: transparent;
+            border: none;
+            outline: none;
+            cursor: pointer;
+            transition: all 0.5s;
+            &:hover {
+                color: #ffffff;
+                border-radius: 2em;
+                padding: 0 0.4em;
+            }
+        }
+    }
+}

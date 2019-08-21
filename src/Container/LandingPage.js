@@ -76,7 +76,7 @@ class LandingPage extends Component {
                     </div>
                     <div className={classes.LandingPage__nav}>
                         <Link to=''><button className={classes.LandingPage__btn}>&#8592;</button></Link>
-                        <Link to='/battlePage'><button className={classes.LandingPage__btn}>&#8594;</button></Link>
+                        <Link to='/game'><button className={classes.LandingPage__btn}>&#8594;</button></Link>
                     </div>
                 </div>
             </Fade>
