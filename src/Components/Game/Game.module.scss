@@ -10,26 +10,29 @@
             width: 50%;
             text-align: center;
             .Game__img {
-                width: 25vw;
+                max-width: 25vw;
                 height: 60vh;
                 padding: 2em 1em;
             }
-            .Game__btns {
-                text-align: center;
-                .Game__btn {
-                    padding: 1em;
-                    background: transparent;
-                    border: 2px solid;
-                    outline: none;
-                    border-radius: 20px;
-                    transition: 0.3s all;
-                    &:hover {
-                        background: red;
-                        color: black;
+            .Game__heroData {
+                .Game__progressBar {
+                    &progress:not([value]) {
+                        /* Styling here */
                     }
+                    &progress[value] {
+                        /* Reset the default appearance */
+                        -webkit-appearance: none;
+                         appearance: none;
+                      
+                        width: 250px;
+                        height: 20px;
+                      }
                 }
             }
         }
+    }
+    .Game__btn {
+        margin: 0 auto;
     }
     .Game__nav {
         display: flex;
@@ -53,4 +56,9 @@
             }
         }
     }
+}
+
+progress:not([value]) {
+    -webkit-appearance: none;
+    appearance: none;
 }

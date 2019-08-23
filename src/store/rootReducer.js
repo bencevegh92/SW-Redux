@@ -22,7 +22,7 @@ const rootReducer = (state = initialState, action) => {
                 ...state,
                 heroes: action.data
             };
-        default: 
+        default:
             return state
     }
 };

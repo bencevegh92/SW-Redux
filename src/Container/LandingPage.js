@@ -29,14 +29,14 @@ class LandingPage extends Component {
     render() {
         //Hero Images | There is no transparent image for Beru and Biggs :( //
         const heroImg = {
-            'Luke Skywalker': 'https://66.media.tumblr.com/52045179f1499f032fd09e379229fb1d/tumblr_o2lkz0OkKV1rxkqbso1_1280.png',
+            'Luke Skywalker': 'http://clipart-library.com/images_k/luke-skywalker-transparent-background/luke-skywalker-transparent-background-1.png',
             'C-3PO': 'https://i2.wp.com/freepngimages.com/wp-content/uploads/2015/12/star-wars-cp3o-transparent-image.png?fit=535%2C1024',
             'R2-D2': 'https://i.pinimg.com/originals/58/53/0b/58530b9a3becedaf61ecf90332d689f5.png',
             'Darth Vader': 'https://purepng.com/public/uploads/large/purepng.com-darth-vaderdarth-vaderanakin-skywalkerstar-wars-franchiseskywalker-170152775443574arc.png',
             'Leia Organa': 'https://i.pinimg.com/originals/be/92/62/be926222e248ecfd993dffa6e077a30a.png',
             'Owen Lars': 'https://i.pinimg.com/originals/b5/3a/5a/b53a5ae9a90265578ecec1a99b0134cc.png',
             'R5-D4': 'https://vignette.wikia.nocookie.net/starwars/images/c/cb/R5-D4_Sideshow.png/revision/latest?cb=20160809033145',
-            'Obi-Wan Kenobi': 'https://gameskeysaustralia.com/image/cache/catalog/data/Hot-Toys/HOTMMS477-500x500.png'
+            'Obi-Wan Kenobi': 'https://www.sideshow.com/storage/product-images/903477/obi-wan-kenobi-deluxe-version_star-wars_silo.png'
         }
         let heroes = this.state.resData.map(hero => {
             return <HeroCards
